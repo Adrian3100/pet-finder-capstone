@@ -90,7 +90,7 @@ If your second table has a different name, replace `applications` with your actu
 ```bash
 VITE_CORE_API_URL=http://localhost:3001
 
-
+aa
 
 SUPABASE_URL=https://qsdruezmobfqcapdxryl.supabase.co
 SUPABASE_SERVICE_ROLE_KEY=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InFzZHJ1ZXptb2JmcWNhcGR4cnlsIiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2NzgzMTY0MywiZXhwIjoyMDgzNDA3NjQzfQ.smybYp8rFcUqFNjYWg_Xmprwahq3WP7GtLpQmUlOTUk

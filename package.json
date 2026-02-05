@@ -1,11 +1,18 @@
 {
   "name": "pet-finder-capstone",
   "private": true,
-  "workspaces": ["client", "api", "microservice"],
+  "workspaces": [
+    "client",
+    "api",
+    "microservice"
+  ],
   "scripts": {
     "dev": "concurrently -k -n MICRO,API,CLIENT \"npm run dev -w microservice\" \"npm run dev -w api\" \"npm run dev -w client\""
   },
   "devDependencies": {
     "concurrently": "^9.0.0"
+  },
+  "dependencies": {
+    "react-router-dom": "^7.13.0"
   }
 }

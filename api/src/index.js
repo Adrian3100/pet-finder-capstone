@@ -68,15 +68,15 @@ app.get("/pets-with-enrichment", async (req, res) => {
       .order("created_at", { ascending: false });
     if (error) return res.status(500).json({ error: error.message });
     const enriched = await Promise.all(
-      (pets || []).map(async (p) => {
+      pets.map(async (pet) => {
         try {
-          const r = await fetch(
-            `${MICROSERVICE_URL}/pet-enrich?species=${encodeURIComponent(p.species)}`
+          const response = await fetch(
+            `${MICROSERVICE_URL}/pet-enrich?species=${encodeURIComponent(pet.species)}`
           );
-          const j = await r.json().catch(() => ({}));
-          return { ...p, fact: j.fact || "", imageUrl: j.imageUrl || "" };
+          const j = await response.json().catch(() => ({}));
+          return { ...pet, fact: j.fact || "", imageUrl: j.imageUrl || "" };
         } catch {
-          return { ...p, fact: "", imageUrl: "" };
+          return { ...pet, fact: "", imageUrl: "" };
         }
       })
     );

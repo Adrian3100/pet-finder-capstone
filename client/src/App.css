@@ -1,4 +1,50 @@
 nav {
-    border: solid brown 2px;
+    border: solid rgb(42, 165, 48) 2px;
     padding: 20px;
+    background-color: aquamarine;
+    text-align: center;
+    
+}
+
+button {
+    background-color: darkgrey;
+    color: antiquewhite;
+    margin-right: auto;
+}
+.petButton {
+    color: chocolate;
+    background-color: powderblue;
+}
+
+.mainButton {
+    color: hotpink;
+    background-color: crimson;
+}
+
+.loginButton {
+    color: gold;
+    background-color: dodgerblue;
+}
+h1 {
+    color: cornsilk;
+    background-color: lightpink;
+    padding: 20px;
+    font-size: 32px;
+    text-align: center;
+}
+
+.hero {
+    color: greenyellow;
+    background-color:aquamarine;
+    text-align: center;
+    border: coral;
+}
+.heroImg {
+    border:rgb(0, 56, 139);
+    position: sticky;
+}
+
+body {
+    color: chartreuse;
+    background:greenyellow;
 }

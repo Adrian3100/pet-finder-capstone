@@ -28,9 +28,9 @@ export default function App() {
         Pets
     </h1>
     <nav>
-        <button onClick={GoToPets}>Pets</button>
-        <button onClick={GoToMain}>Main</button>
-        <button onClick={GoToLogIn}>LogIn</button>
+        <button className="petButton" onClick={GoToPets}>Pets</button>
+        <button className="mainButton" onClick={GoToMain}>Main</button>
+        <button className="loginButton" onClick={GoToLogIn}>LogIn</button>
     </nav>
     {content}
     </div>;

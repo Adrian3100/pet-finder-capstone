@@ -2,6 +2,7 @@ import { useState } from "react";
 import PetsPage from "./pages/PetsPage.jsx";
 import MainPage from "./pages/MainPage.jsx";
 import LogInPage from "./pages/LogInPage.jsx";
+import InsightsPage from "./pages/InsightsPage.jsx";
 import "./App.css";
 export default function App() {
   const [page,setPage] = useState("Main")
@@ -14,6 +15,9 @@ export default function App() {
    function GoToLogIn() {
     setPage('LogIn');
    }
+   function GoToInsights() {
+    setPage('Insights');
+   }
   let content = <MainPage setPage={setPage}/>
    if (page===('Main')) {
     content = <MainPage setPage={setPage}/>
@@ -22,6 +26,9 @@ export default function App() {
    }
    else if (page==='LogIn') {
     content = <LogInPage setPage={setPage}/>
+   }
+   else if (page === "Insights") {
+    content = <InsightsPage setPage={setPage}/>
    }
   return <div>
     <h1>

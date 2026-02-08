@@ -16,6 +16,7 @@ export default function MainPage({ setPage }) {
         <div className="heroButtons">
           <button onClick={() => setPage("Pets")}>Start Finding</button>
           <button onClick={() => setPage("LogIn")}>Login</button>{" "}
+          <button onClick={() => setPage("Insights")}>View Insights</button>
         </div>
       </div>
     </div>
